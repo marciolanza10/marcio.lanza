@@ -1,0 +1,136 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho (Hero) */
+header {
+    background: linear-gradient(135deg, #1e3f20 0%, #0a1f0c 100%);
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #00ff88;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header h1 span {
+    color: #00ff88;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b3cbb7;
+}
+
+/* Seção Sobre */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #1e3f20;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Grid de Cards (Subtemas) */
+.grid-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #1e3f20;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-top-color: #00ff88;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #1e3f20;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Seção de Destaque/Impacto */
+.impacto {
+    background-color: #e8efe9;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 5px solid #1e3f20;
+}
+
+.impacto h3 {
+    color: #1e3f20;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a1f0c;
+    color: #7a9a7e;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; }
+    .intro h2 { font-size: 1.6rem; }
+}
